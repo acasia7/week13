@@ -1,14 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import App from './App';
+import styled from 'styled-components';
+import App from './App.js';
 import reportWebVitals from './reportWebVitals';
+import LoginPage from './components/login-page';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+ReactDOM.render(
+  <LoginPage />,
+   document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
